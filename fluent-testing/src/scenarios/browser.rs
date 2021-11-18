@@ -4,6 +4,7 @@ use crate::queries;
 pub fn get_scenario() -> Scenario {
     Scenario::new(
         "browser",
+        true,
         vec![
             FileSource::new("toolkit", "toolkit/{locale}/", vec!["en-US", "pl"]),
             FileSource::new("browser", "browser/{locale}/", vec!["en-US", "pl"]),
@@ -99,9 +100,7 @@ pub fn get_scenario() -> Scenario {
             ("main-context-menu-open-link-new-tab", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Open Link in New Tab"), L10nAttribute::new("accesskey", "T")]))),
             ("main-context-menu-open-link-container-tab", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Open Link in New Container Tab"), L10nAttribute::new("accesskey", "b")]))),
             ("main-context-menu-open-link-new-window", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Open Link in New Window"), L10nAttribute::new("accesskey", "W")]))),
-            ("main-context-menu-open-link-new-private-window", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Open Link in New Private Window"), L10nAttribute::new("accesskey", "P")]))),
-            ("main-context-menu-bookmark-this-link", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Bookmark This Link"), L10nAttribute::new("accesskey", "L")]))),
-            ("main-context-menu-save-link", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Save Link As…"), L10nAttribute::new("accesskey", "k")]))),
+            ("main-context-menu-bundlessave-link", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Save Link As…"), L10nAttribute::new("accesskey", "k")]))),
             ("main-context-menu-save-link-to-pocket", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Save Link to Pocket"), L10nAttribute::new("accesskey", "o")]))),
             ("main-context-menu-copy-email", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Copy Email Address"), L10nAttribute::new("accesskey", "A")]))),
             ("main-context-menu-copy-link", L10nMessage::new(None, Some(vec![L10nAttribute::new("label", "Copy Link Location"), L10nAttribute::new("accesskey", "a")]))),

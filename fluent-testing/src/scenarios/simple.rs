@@ -4,6 +4,7 @@ use crate::queries;
 pub fn get_scenario() -> Scenario {
     Scenario::new(
         "simple",
+        true,
         vec![FileSource::new(
             "browser",
             "browser/{locale}/",

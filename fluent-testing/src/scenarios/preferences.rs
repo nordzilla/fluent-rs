@@ -4,6 +4,7 @@ use crate::queries;
 pub fn get_scenario() -> Scenario {
     Scenario::new(
         "preferences",
+        true,
         vec![
             FileSource::new("toolkit", "toolkit/{locale}/", vec!["en-US", "pl"]),
             FileSource::new("browser", "browser/{locale}/", vec!["en-US", "pl"]),
